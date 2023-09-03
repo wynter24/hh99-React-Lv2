@@ -17,3 +17,4 @@ Done zone의 poster
 삭제 버튼
 
 ## 사이트 보러 가기 (배포)
+https://hh99-react-lv2-beta.vercel.app/

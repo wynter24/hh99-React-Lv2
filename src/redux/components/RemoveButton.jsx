@@ -1,14 +1,6 @@
 import { useDispatch } from "react-redux";
-import { delete_post } from "../redux/modules/posts";
-import { styled } from "styled-components";
-
-const DeleteBtn = styled.button`
-  width: 115px;
-  height: 40px;
-  border: 2px solid red;
-  border-radius: 8px;
-  background-color: transparent;
-`;
+import { delete_post } from '../modules/posts';
+import { DeleteBtn } from '../../styles/styles';
 
 const RemoveButton = ({ item }) => {
   const dispatch = useDispatch();

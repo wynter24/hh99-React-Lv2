@@ -5,7 +5,7 @@ const NOT_YET = "posts/NOT_YET"
 const DELETE_POST = "post/DELETE_POST"
 
 // action creator : action value를 return 하는 함수
-// 컴포넌트에서 사용 -> app.js
+// 컴포넌트에서 사용 
 // 아래가 action 객체임
 // 사용자가 입력한 값
 export const addPost = (title, setTitle, content, setContent) => {
@@ -63,7 +63,7 @@ const initialState = [
 // input : state와 action
 // state = intialState : state의 초기값은 intialState이다.
 // action: state를 어떻게 수정하고 표현할지 나타내는 객체로 type과 value가 있다
-// action={} : 데이터를 전달 받지 못하여 함수를 실행하지 못하는 오류를 방지하기 위해 빈 객체를 전달
+// action={} : 데이터를 전달 받지 못해 함수를 실행하지 못하는 오류를 방지하기 위해 빈 객체를 전달
 const posts = (state=initialState, action={}) => {
   switch(action.type) {
 		case ADD_POST:{

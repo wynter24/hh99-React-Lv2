@@ -1,38 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { styled } from "styled-components";
-
-const DtailPostBoxLayout = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-`;
-
-const DtailPostBox = styled.div`
-  width: 600px;
-  height: 400px;
-  border: 1px solid rgb(238, 238, 238);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 24px;
-`;
-const UpSide = styled.div`
-  width: 100%;
-  height: 80px;
-  padding: 0 24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
-const DownSide = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`
+import { DtailPostBoxLayout,DtailPostBox,UpSide,DownSide } from '../styles/styles';
 
 function Detail({ item }) {
   // 어떤 파라미터가 들어왔는지 확인 -> 우리 router에서 지정한 id값이 출력됨
